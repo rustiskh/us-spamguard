@@ -56,6 +56,10 @@
 		position: absolute;
 		z-index: -1;
 
+		@include mobile {
+			display: none;
+		}
+
 		&_first {
 			top: 1040px;
 		}

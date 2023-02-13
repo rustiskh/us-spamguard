@@ -611,6 +611,11 @@
   position: absolute;
   z-index: -1;
 }
+@media (max-width: 768px) {
+  .usage__bg-shape {
+    display: none;
+  }
+}
 .usage__bg-shape_first {
   top: 1040px;
 }
