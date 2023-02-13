@@ -70,10 +70,16 @@
 	border-radius: 16px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: start;
 
 	&-header {
 		display: flex;
+	}
+
+	&-content-wrapper {
+		@include tablet {
+			min-height: 190px;
+		}
 	}
 
 	&-icon {
@@ -127,7 +133,6 @@
 	.slick-slide {
 		width: 320px;
 		margin-right: 40px;
-		min-height: 888px;
 		display: flex;
 		min-width: 0;
 		margin-bottom: 30px;

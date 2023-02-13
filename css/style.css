@@ -626,14 +626,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 .usage__card-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 1190px) {
+  .usage__card-content-wrapper {
+    min-height: 190px;
+  }
 }
 .usage__card-icon {
   margin-right: 16px;
@@ -679,7 +684,6 @@
 .usage .slick-slide {
   width: 320px;
   margin-right: 40px;
-  min-height: 888px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1555,9 +1559,13 @@ a {
   text-decoration: none;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: #f8f8fa;
-  overflow-x: hidden;
 }
 
 .container {
