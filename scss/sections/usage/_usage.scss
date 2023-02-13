@@ -61,13 +61,13 @@
 		}
 
 		&_first {
-			top: 1040px;
+			top: -380px;
 		}
 
 		&_second {
 			transform: scaleX(-1);
 			right: 0;
-			top: 2267px;
+			top: 462px;
 		}
 	}
 }
@@ -81,7 +81,11 @@
 	border-radius: 16px;
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: space-between;
+
+	@include tablet {
+		justify-content: start;
+	}
 
 	&-header {
 		display: flex;
