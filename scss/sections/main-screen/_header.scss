@@ -1,0 +1,63 @@
+.header {
+	position: relative;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 9999;
+
+	&__logo-box {
+		&-logo {
+			&_pc {
+				@include tablet {
+					display: none;
+				}
+			}
+
+			&_mob {
+				display: none;
+
+				@include tablet {
+					display: block;
+				}
+			}
+		}
+	}
+
+	&__navigation {
+		max-width: 602px;
+		display: flex;
+		justify-content: space-between;
+
+		@include tablet {
+			display: none;
+		}
+
+		.header__link {
+			margin-right: 40px;
+
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+
+	&__link {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 19px;
+		color: #ffffff;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__controls {
+		.button {
+			margin-right: 12px;
+		}
+	}
+}

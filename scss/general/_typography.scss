@@ -1,0 +1,96 @@
+.title {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+
+	&_h1 {
+		font-size: 40px;
+		line-height: 48px;
+		color: #ffffff;
+
+		@include tablet {
+			font-size: 36px;
+			line-height: 44px;
+		}
+
+		@include mobile {
+			font-size: 32px;
+			line-height: 39px;
+		}
+	}
+
+	&_h2 {
+		font-size: 40px;
+		line-height: 48px;
+		position: relative;
+
+		&::after {
+			display: block;
+			content: "";
+			position: relative;
+			height: 1px;
+			width: 80px;
+
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 10px;
+		}
+
+		@include tablet {
+			font-size: 36px;
+			line-height: 44px;
+		}
+
+		@include mobile {
+			font-size: 26px;
+			line-height: 31px;
+		}
+	}
+
+	&_h3 {
+		font-size: 24px;
+		line-height: 29px;
+
+		@include tablet {
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+		@include mobile {
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+
+	&_h4 {
+		font-size: 28px;
+		line-height: 34px;
+
+		@include tablet {
+			font-size: 24px;
+			line-height: 29px;
+		}
+
+		@include mobile {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	&_white {
+		color: #f8f8fa;
+
+		&::after {
+			background: #f8f8fa;
+		}
+	}
+
+	&_black {
+		color: #23173d;
+
+		&::after {
+			background: #23173d;
+		}
+	}
+}
+//  title_h1 title_white

@@ -1,0 +1,44 @@
+.button {
+	border-radius: 8px;
+
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 21px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 15px 50px;
+	border: none;
+	cursor: pointer;
+
+	&_mini {
+		font-size: 15px;
+		line-height: 18px;
+		padding: 10px 30px;
+	}
+
+	&_big {
+		font-weight: 400;
+		font-size: 19px;
+		line-height: 23px;
+	}
+
+	&_blue {
+		background: linear-gradient(92.34deg, #606fe3 0%, #4783fe 100%);
+	}
+
+	&_gradient {
+		background: linear-gradient(94.89deg, #3464cf 0.74%, #691e99 97.37%);
+	}
+
+	&_sticky {
+		position: fixed;
+		bottom: 25px;
+		z-index: 9999;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		// min-width: 250px;
+	}
+}

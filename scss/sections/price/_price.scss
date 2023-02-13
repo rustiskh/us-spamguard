@@ -1,0 +1,243 @@
+.price {
+	&.container {
+		margin-top: 80px;
+
+		@include tablet {
+			margin-top: 60px;
+		}
+
+		@include mobile {
+			margin-top: 40px;
+		}
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__card-wrapper {
+		margin-top: 70px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		@include tablet {
+			margin-top: 50px;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@include mobile {
+			margin-top: 40px;
+		}
+	}
+}
+
+.price-card {
+	max-width: 340px;
+	background: #ffffff;
+	border: 1px solid #e8e8e8;
+	box-shadow: 5px 4px 14px rgba(0, 0, 0, 0.01), 7px 8px 15px rgba(0, 0, 0, 0.04);
+	border-radius: 12px;
+
+	@include tablet {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	@include mobile {
+		margin-bottom: 16px;
+	}
+
+	&__header {
+		padding: 18px 0;
+		font-weight: 500;
+		font-size: 29px;
+		line-height: 35px;
+		text-align: center;
+		color: #fffffe;
+		background: #11418a;
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+
+		@include tablet {
+			font-size: 24px;
+			line-height: 29px;
+		}
+
+		&_trial {
+			background: linear-gradient(94.89deg, #3464cf 0.74%, #691e99 97.37%);
+		}
+
+		&_full {
+			background: linear-gradient(224.08deg, #870bd5 -21.31%, rgba(146, 73, 157, 0.19) 51.98%), linear-gradient(122.63deg, #217aff -2.6%, rgba(33, 122, 255, 0) 64.33%), #0e1926;
+		}
+
+		&_premium {
+			background: linear-gradient(117.91deg, #2c2346 2.02%, #23163d 100%);
+		}
+	}
+
+	&__wrapper {
+		padding: 21px 20px 35px 20px;
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 21px;
+		color: #23173d;
+	}
+
+	&__check-list {
+		margin-top: 12px;
+		list-style-type: none;
+		&-item {
+			margin-bottom: 8px;
+
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 19px;
+			color: #23173d;
+
+			padding-left: 27px;
+			background-image: url(../icons/icon-price_check.svg);
+			background-position: 0 0;
+			background-size: 19px;
+			background-repeat: no-repeat;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__features-list {
+		margin-top: 12px;
+		list-style-type: none;
+		&-item {
+			margin-bottom: 8px;
+
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 19px;
+			color: #23173d;
+
+			padding-left: 27px;
+			background-image: url(../icons/icon-price_star.svg);
+			background-position: 0 0;
+			background-size: 19px;
+			background-repeat: no-repeat;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__controls-wrapper {
+		margin-top: 60px;
+	}
+
+	&__controls-description {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 19px;
+		color: #23173d;
+	}
+
+	&__controls-small-text {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		color: #23173d;
+		margin-top: 6px;
+	}
+
+	&__account-input {
+		margin-top: 12px;
+		padding: 15px 20px;
+		width: 100%;
+		border: 1px solid #3464cf;
+		border-radius: 6px;
+
+		font-weight: 300;
+		font-size: 19px;
+		line-height: 23px;
+		color: #23173d;
+
+		&::placeholder {
+			color: #606060;
+		}
+
+		&:focus {
+			border-color: #691e99;
+		}
+	}
+
+	&__calculated-price {
+		margin-top: 12px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		background: linear-gradient(180deg, #386adc 0%, #68258c 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+
+	&__cta-text {
+		font-size: 16px;
+		line-height: 19px;
+		color: #23173d;
+		position: relative;
+
+		&_moneyback {
+			margin-top: 20px;
+			font-weight: 500;
+
+			&::before {
+				content: url("../icons/icon-price_moneyback.svg");
+				position: relative;
+				top: 3px;
+				margin-right: 8px;
+			}
+		}
+
+		&_notification {
+			margin-top: 14px;
+			font-weight: 300;
+			&::before {
+				content: url("../icons/icon-price_ring.svg");
+				position: relative;
+				top: 3px;
+				margin-right: 8px;
+			}
+		}
+	}
+
+	&__main-button {
+		width: 100%;
+		margin-top: 14px;
+		border: none;
+		cursor: pointer;
+		letter-spacing: 0;
+	}
+
+	&__link {
+		display: block;
+		margin-top: 8px;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		text-decoration-line: underline;
+		color: #3760cc;
+	}
+}

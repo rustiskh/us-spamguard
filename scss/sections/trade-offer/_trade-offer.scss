@@ -1,0 +1,92 @@
+.trade-offer {
+	display: flex;
+	justify-content: space-between;
+
+	@include tablet {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&.container {
+		margin-top: -80px;
+	}
+}
+
+.trade-offer__card {
+	width: 220px;
+	padding: 20px 15px;
+	background: #ffffff;
+	box-shadow: 5px 4px 14px rgba(0, 0, 0, 0.01), 7px 8px 15px rgba(0, 0, 0, 0.04);
+	border-radius: 8px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include tablet {
+		margin-bottom: 20px;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:nth-child(4) {
+			margin-bottom: 0;
+		}
+
+		&:nth-child(5) {
+			margin-bottom: 0;
+		}
+	}
+
+	@include mobile {
+		width: 100%;
+		padding: 16px 12px;
+		flex-direction: row;
+
+		margin-right: 0;
+		margin-bottom: 16px;
+
+		&:nth-child(4) {
+			margin-bottom: 16px;
+		}
+	}
+
+	&-icon-wrapper {
+		margin-bottom: 14px;
+
+		@include mobile {
+			margin-bottom: 0;
+			margin-right: 16px;
+		}
+	}
+
+	&-text-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include mobile {
+			align-items: start;
+		}
+	}
+
+	&-header {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 14px;
+	}
+
+	&-text {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		color: #23173d;
+
+		@include mobile {
+			text-align: left;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+// font-family: 'Inter', sans-serif;
+@import "general/mixins-media";
+@import "general/cookie-block";
+@import "general/typography";
+@import "general/logo";
+@import "general/buttons";
+@import "sections/main-screen/header";
+@import "sections/main-screen/main-screen";
+@import "sections/trade-offer/trade-offer";
+@import "sections/landing-seo-text/landing-seo-text";
+@import "sections/usage/usage";
+@import "sections/features/features";
+@import "sections/price/price";
+@import "sections/reviews/review";
+@import "sections/footer/footer";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: #f8f8fa;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+
+	@include tablet {
+		max-width: 708px;
+		// padding: 0 25px;
+	}
+
+	@include mobile {
+		max-width: 343px;
+	}
+}

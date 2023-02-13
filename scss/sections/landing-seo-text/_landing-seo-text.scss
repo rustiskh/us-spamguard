@@ -1,0 +1,35 @@
+.landing-seo-text {
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 3px;
+		height: calc(100% + 40px);
+
+		background: linear-gradient(180deg, #386adc 0%, #68258c 100%);
+		border-radius: 12px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&.container {
+		margin-top: 80px;
+		max-width: 920px;
+	}
+	&__content {
+		position: relative;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 24px;
+		color: #23173d;
+		margin-left: 38px;
+	}
+}
+
+.landing-seo-text__bg-shape {
+	position: absolute;
+	top: 1040px;
+	z-index: -1;
+}
