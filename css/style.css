@@ -527,6 +527,11 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media (max-width: 768px) {
+  .landing-seo-text::before {
+    display: none;
+  }
+}
 .landing-seo-text.container {
   margin-top: 80px;
   max-width: 920px;
@@ -539,11 +544,11 @@
   color: #23173d;
   margin-left: 38px;
 }
-
-.landing-seo-text__bg-shape {
-  position: absolute;
-  top: 1040px;
-  z-index: -1;
+@media (max-width: 768px) {
+  .landing-seo-text__content {
+    margin-left: 0;
+    padding: 0 10px;
+  }
 }
 
 .usage {
@@ -604,11 +609,16 @@
 }
 .usage__bg-shape {
   position: absolute;
+  z-index: -1;
+}
+.usage__bg-shape_first {
+  top: 1040px;
+}
+.usage__bg-shape_second {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   right: 0;
   top: 2267px;
-  z-index: -1;
 }
 
 .usage__card {

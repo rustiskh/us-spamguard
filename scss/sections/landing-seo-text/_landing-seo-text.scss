@@ -12,6 +12,10 @@
 		border-radius: 12px;
 		top: 50%;
 		transform: translateY(-50%);
+
+		@include mobile {
+			display: none;
+		}
 	}
 
 	&.container {
@@ -25,11 +29,10 @@
 		line-height: 24px;
 		color: #23173d;
 		margin-left: 38px;
-	}
-}
 
-.landing-seo-text__bg-shape {
-	position: absolute;
-	top: 1040px;
-	z-index: -1;
+		@include mobile {
+			margin-left: 0;
+			padding: 0 10px;
+		}
+	}
 }

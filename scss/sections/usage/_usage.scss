@@ -54,10 +54,17 @@
 
 	&__bg-shape {
 		position: absolute;
-		transform: scaleX(-1);
-		right: 0;
-		top: 2267px;
 		z-index: -1;
+
+		&_first {
+			top: 1040px;
+		}
+
+		&_second {
+			transform: scaleX(-1);
+			right: 0;
+			top: 2267px;
+		}
 	}
 }
 
