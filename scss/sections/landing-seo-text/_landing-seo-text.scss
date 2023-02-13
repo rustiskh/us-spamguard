@@ -30,6 +30,11 @@
 		color: #23173d;
 		margin-left: 38px;
 
+		@include tablet {
+			font-size: 14px;
+			line-height: 17px;
+		}
+
 		@include mobile {
 			margin-left: 0;
 			padding: 0 10px;

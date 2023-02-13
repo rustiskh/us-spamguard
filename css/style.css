@@ -544,6 +544,12 @@
   color: #23173d;
   margin-left: 38px;
 }
+@media (max-width: 1190px) {
+  .landing-seo-text__content {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
 @media (max-width: 768px) {
   .landing-seo-text__content {
     margin-left: 0;
@@ -692,6 +698,11 @@
 }
 .usage__card-img {
   margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .usage__card-img {
+    max-height: 586px;
+  }
 }
 .usage__card:last-child {
   margin: 60px auto;
