@@ -44,6 +44,31 @@ window.addEventListener("DOMContentLoaded", () => {
         slidesToScroll: 1,
         adaptiveHeight: true,
         dots: true,
+        infinite: false,
+        prevArrow:
+            '<button type="button" class="slick-prev"><img src="icons/icon-landing-slider-arrow-left.svg"></button>',
+        nextArrow:
+            '<button type="button" class="slick-next"><img src="icons/icon-landing-slider-arrow-right.svg"></button>',
+        responsive: [
+
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                },
+            },
+        ],
+    });
+
+    $(".other-features__slider-wrapper_mobile").slick({
+        arrows: true,
+        centerMode: true,
+        variableWidth: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        dots: true,
+        infinite: false,
         prevArrow:
             '<button type="button" class="slick-prev"><img src="icons/icon-landing-slider-arrow-left.svg"></button>',
         nextArrow:
@@ -82,7 +107,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 },
             },
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
                     // arrows: false,
                     slidesToShow: 1,
